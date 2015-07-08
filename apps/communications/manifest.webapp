@@ -35,7 +35,20 @@
           "name": "電話",
           "description": "Gaia 電話"
         }
-      }
+      },
+      "custom_commands": [{
+        "@context": "http://schema.org",
+        "@type": "DialAction",
+        "target": {
+          "activity": {
+            "name": "dial",
+            "data": {
+              "type": "webtelephony/number",
+              "number": "@number"
+            }
+          }
+        }
+      }]
     },
     "contacts": {
       "launch_path": "/contacts/index.html",
