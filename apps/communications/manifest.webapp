@@ -40,7 +40,7 @@
         "@context": "http://schema.org",
         "@type": "DialAction",
         "target": {
-          "@type": "activity",
+          "@type": "WebActivity",
           "activity": {
             "name": "dial",
             "data": {
